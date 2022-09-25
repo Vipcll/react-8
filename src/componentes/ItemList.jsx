@@ -18,7 +18,7 @@ const ItemList = ({ products })=> {
             <Card.Text>
               $ {product.price}
             </Card.Text>
-               
+            
             <Link to={`/item/${product.id}`}><Button id = "botonDetalle" variant="secondary" className='boton-detalle' > Ver detalle </Button></Link>
           </Card.Body>
         </Card>

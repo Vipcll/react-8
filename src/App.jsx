@@ -6,6 +6,7 @@ import './App.css';
 //import Visto en clase
 import ItemDetailContainer from './contenedores/ItemDetailContainer';
 import ItemListContainer from './contenedores/ItemListContainer';
+import Cart from './componentes/Cart';
 
 //Lazy se crea cuando se necesita 
 const OtherComponent = React.lazy(() => import('./componentes/navbar'));
@@ -19,6 +20,7 @@ function App() {
       <OtherComponent/>
       <Routes>
         <Route path="" element={<ItemListContainer/>}/>
+        <Route path="cart" element={<Cart/>}/>
         <Route path='item'><Route path=":id" element={<ItemDetailContainer/>}/></Route>
         <Route path='category'><Route path=":id" element={<ItemListContainer/>}/></Route>
       </Routes> 
